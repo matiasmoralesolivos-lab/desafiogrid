@@ -7,9 +7,9 @@
 body {
   display: grid;
   grid-template-areas:
-    "navbar navbar navbar navbar"
-    "menulat contenido contenido contenido"
-    "piepagina piepagina piepagina piepagina";
+    "navbar navbar "
+    "menulat contenido "
+    "piepagina piepagina ";
   grid-template-columns: 1fr 4fr 0.5fr;
   grid-template-rows: 80px 1fr 50px;
   min-height: 100vh;
