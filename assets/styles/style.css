@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "navbar navbar navbar"
+    "menulat contenido contenido"
+    "piepagina piepagina piepagina";
+  grid-template-columns: 1fr 4fr 0.5fr;
+  grid-template-rows: 80px 1fr 50px;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  grid-area: navbar;
+}
+
+.menulat {
+  background-color: rgb(62, 41, 180);
+  grid-area: menulat;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  color: white;
+}
+
+.contenido {
+  grid-area: contenido;
+  text-align: center;
+}
+
+.piepagina {
+  background-color: gray;
+  grid-area: piepagina;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.grilla-monitores {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  padding: 20px;
+}
+.card-monitor {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+  border: solid 2px black;
+}
+
+.card-img {
+  width: 300px;
+  height: 230px;
+  object-fit: cover;
+  margin-left: 25px;
+}
+h5 {
+  padding-top: 5px;
+}
+
+h2 {
+  padding-top: 15px;
+}
+button {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: rgb(17, 17, 163);
+  color: white;
+  height: 35px;
+}
+h3 {
+  padding-top: 15px;
+}
+
+a {
+  color: white;
+}
